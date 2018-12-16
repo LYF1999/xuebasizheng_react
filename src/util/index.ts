@@ -7,7 +7,7 @@ export function handleErr(err): ResErr {
   if (err.response) {
     return {
       status: err.response.status,
-      message: err.response.data.message || err.response.status_text,
+      message: err.response.data.message || err.response.statusText,
     }
   }
   return {
